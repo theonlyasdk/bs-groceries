@@ -1,0 +1,107 @@
+body {
+    font-family: "Inter", system-ui !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #343a40;
+    color: white;
+    user-select: none;
+}
+
+button {
+    cursor: default !important;
+}
+
+.impClass {
+    color: rgb(255, 202, 202);
+}
+
+.items-in-cart-list li {
+    background-color: #071d07;
+}
+
+.items-to-be-added li {
+    background-color: #290b0b;
+}
+
+.split-pane-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.split-pane-left {
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    flex: 0;
+    min-width: 14em;
+    height: 100vh;
+    border-right: #252a2e solid 1px;
+}
+
+.split-pane-right {
+    flex: 2;
+    margin-left: 1em;
+    overflow-y: auto;
+    max-height: 100vh;
+    padding-top: 1em;
+    padding-left: .4em;
+    padding-right: 1em;
+}
+
+.flex-row-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .3em;
+}
+
+.flex-row-space-between>p {
+    height: 100%;
+    margin: 0;
+}
+
+.list-header {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.list-group-item:active {
+    background-color: var(--bs-primary);
+}
+
+.list-group-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-group-item button {
+    margin-right: 1em !important;
+}
+
+.nothing-in-container-notice {
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .split-pane-container {
+        flex-direction: column;
+    }
+
+    .split-pane-left {
+        min-width: auto;
+        margin-bottom: 1em;
+        position: relative;
+    }
+
+    .split-pane-right {
+        margin-left: 0;
+        overflow-y: visible;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-bottom: 1em;
+    }
+}
